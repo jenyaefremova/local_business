@@ -1,5 +1,5 @@
-var button = document.querySelector('#navbar-button');
-var menu = document.querySelector('#navbar-menu');
+var button = document.querySelector('#navbarButton');
+var menu = document.querySelector('#navbarMenu');
 
 button.addEventListener('click', function() {
   menu.classList.add("navbar-block__menu_active");
