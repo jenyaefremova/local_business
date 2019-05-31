@@ -3,14 +3,95 @@
   &-block
     display: flex
     justify-content: space-between
+    align-items: center
     &__menu
       display: flex
     &__link
+      display: block
       text-transform: uppercase
       color: $text-color
-      margin-right: 40px
+      padding: 10px 20px
       font-size: 14px
       &:hover
         color: #ffffff
+        background-color: $main-color 
+    &__button
+      display: block      
+      width: 50px
+      height: 50px
+      position: relative
+      display: none 
+      & .burger
+        position: absolute
+        width: 20px
+        height: 2px
+        left: 50%
+        margin-left: -10px
+        top: 50%
+        margin-top: -1px 
+        background-color: $text-color
+        &:before
+          content: ''   
+          position: absolute
+          width: 20px
+          height: 2px
+          left: 50%
+          margin-left: -10px
+          top: 50%
+          margin-top: -1px 
+          background-color: $text-color
+          transform: translateY(-5px)
+        &:after
+          content: ''   
+          position: absolute
+          width: 20px
+          height: 2px
+          left: 50%
+          margin-left: -10px
+          top: 50%
+          margin-top: -1px 
+          background-color: $text-color
+          transform: translateY(5px)
+      &:hover
         background-color: $main-color
-        padding: 10px 20px
+        /* & .burger
+          background-color: #fff   */      
+   
+
+        
+@media (max-width: 1035px) 
+  .navbar
+    &-block
+      &__link
+        font-size: 10px
+        padding: 5px 10px
+@media (max-width: 768px) 
+  .navbar
+    &-block
+      position: relative
+      &__menu
+        display: none
+        &_active
+          display: block
+          position: absolute
+          right: -1%
+          top: 80%
+                  
+          &:first-of-child
+            display: none
+      &__link
+        font-size: 14px
+        padding: 7px 10px
+        text-align: right
+      &__button
+        display: block
+      
+@media (max-width: 567px) 
+  .navbar
+    padding: 15px 0
+    &-block
+      &__menu
+        &_active
+          width: 100%  
+      &__link
+        text-align: center     
