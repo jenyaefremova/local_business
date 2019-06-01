@@ -1,5 +1,5 @@
 .navbar
-  padding: 22px 0
+  padding: 15px 0 12px
   &-block
     display: flex
     justify-content: space-between
@@ -62,9 +62,11 @@
 @media (max-width: 1035px) 
   .navbar
     &-block
+      &__menu
+        margin-right: -30px 
       &__link
         font-size: 10px
-        padding: 5px 10px
+        padding: 5px 5px
 @media (max-width: 768px) 
   .navbar
     &-block
@@ -72,13 +74,18 @@
       &__menu
         display: none
         &_active
+          width: 50%
           display: block
           position: absolute
-          right: -1%
-          top: 80%
+          top: 90%
+          right: 5%
+          text-align: center
+          background-color: #fff
+          padding: 20px 0 30px
+          z-index: 2
       &__link
-        font-size: 14px
-        padding: 7px 10px
+        font-size: 20px
+        padding: 17px
         text-align: right
       &__button
         display: block
@@ -89,6 +96,11 @@
     &-block
       &__menu
         &_active
-          width: 100%  
+          width: 100%
+          right: 0
+          margin: auto
+          display: block
       &__link
-        text-align: center     
+        text-align: center
+        
+        

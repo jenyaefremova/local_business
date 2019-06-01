@@ -3,16 +3,37 @@
 body
   font-family: sans-serif
   color: $text-color
+img
+  width: 100% 
 .container
   width: 1154px
   margin: auto
+  
 ul
   padding: 0
 li
   list-style: none
 a
   text-decoration: none
-
+  
+.form
+  &__input
+    color: #a9a9a9
+    padding: 18px 40px
+    font-size: 13px
+    border-style: none
+    border-radius: 2px
+    width: 281px
+    height: 46px
+    background-color: #fff       
+  &__button
+    border-style: none
+    background-color: $main-color 
+    color: #ffffff
+    padding: 0 44px
+    height: 46px
+    text-transform: uppercase
+  
 @media (max-width: 1200px) 
   .container
     max-width: 960px

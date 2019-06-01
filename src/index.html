@@ -8,6 +8,7 @@
   <title>Local business</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/b20b925a25.js"></script>
 </head>
 
 <body>
@@ -48,14 +49,24 @@
           <p class="hero-block__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum typesetting</p>
           <form action="#" class="form hero-block__form">
-            <input type="text" class="form__input" placeholder="Full Name">
-            <input type="email" class="form__input" placeholder="Email Address">
-            <input type="tel" class="form__input" placeholder="Phone Number">
+            <span class="form__input-icon"><i class="fas fa-user"></i></span>
+            <input type="text" class="form__input form__input-text" placeholder="Full Name">
+
+            <span class="form__input-icon"><i class="fas fa-envelope"></i></span>
+            <input type="email" class="form__input form__input-email" placeholder="Email Address">
+
+            <span class="form__input-icon"><i class="fas fa-phone"></i></span>
+            <input type="tel" class="form__input form__input-tel" placeholder="Phone Number">
+
             <button class="button form__button">Request a quote</button>
           </form>
           <div class="hero-block__image">
-            <img src="img/hero-img-tv-1.png" class="hero-block__image-slider">
-           
+            <div class="img-box">
+              <img src="img/hero-img.png" alt="j" class="hero-block__image-tv">
+            </div>
+            <div class="img-box">
+              <img src="img/hero-img-tv-1.png" class="hero-block__image-slider">
+            </div>
           </div>
 
         </div>
